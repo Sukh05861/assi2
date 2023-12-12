@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.assiignment1.HelloController" spacing="10" alignment="CENTER">
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Enter Numbers:" style="-fx-font-size: 14;"/>
+        <TextField fx:id="inputTextField" style="-fx-font-size: 14;" />
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Calculate" onAction="#calculateButtonClicked" style="-fx-font-size: 14; -fx-background-color: #4CAF50; -fx-text-fill: white;"/>
+        <Button text="Refresh" onAction="#refreshButtonClicked" style="-fx-font-size: 14; -fx-background-color: #808080; -fx-text-fill: white;"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Total:" style="-fx-font-size: 14;"/>
+        <Label fx:id="totalLabel" style="-fx-font-size: 14; -fx-text-fill: orange;" />
+        <Button text="Calculate Total" onAction="#totalButtonClicked" style="-fx-font-size: 14; -fx-background-color: #FFA500; -fx-text-fill: white;"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Average:" style="-fx-font-size: 14;"/>
+        <Label fx:id="averageLabel" style="-fx-font-size: 14; -fx-text-fill: blue;" />
+        <Button text="Calculate Average" onAction="#averageButtonClicked" style="-fx-font-size: 14; -fx-background-color: #0000FF; -fx-text-fill: white;"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Maximum:" style="-fx-font-size: 14;"/>
+        <Label fx:id="maxLabel" style="-fx-font-size: 14; -fx-text-fill: red;" />
+        <Button text="Calculate Maximum" onAction="#maximumButtonClicked" style="-fx-font-size: 14; -fx-background-color: #FF0000; -fx-text-fill: white;"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Minimum:" style="-fx-font-size: 14;"/>
+        <Label fx:id="minLabel" style="-fx-font-size: 14; -fx-text-fill: green;" />
+        <Button text="Calculate Minimum" onAction="#minimumButtonClicked" style="-fx-font-size: 14; -fx-background-color: #008000; -fx-text-fill: white;"/>
+    </HBox>
+
+</VBox>
